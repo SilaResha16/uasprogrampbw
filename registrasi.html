@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: palevioletred;
+        }
+    </style>
+    <title>Registrasi</title>
+</head>
+
+<body>
+    <h2>Booking Kamar Kost</h2>
+    <form action="#" method="Post">
+        <p>
+            <label for="nama">Nama Lengkap :</label> <br>
+            <input type="text" name="nama" id="nama" required>
+        </p>
+        <p>
+            <label for="email">Email :</label><br>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="alamat">Alamat :</label><br>
+            <input type="text" name="alamat" id="alamat" required>
+        </p>
+        <p>
+            <label for="no_telp">No Telp :</label><br>
+            <input type="tel" name="no_telp" id="no_telp" required>
+        </p>
+        <p>
+            <label for="gender">Jenis Kelamin :</label><br>
+            <input type="radio" name="gender" value="laki-laki" checked> Laki-laki
+            <input type="radio" name="gender" value="perempuan"> Perempuan
+        </p>
+        <p>
+            <label> Metode Pembayaran : </label><br>
+            <select name="kota">
+                <option selected="select">-= Pilih =-</option>
+                <option value="Transfer">Transfer</option>
+                <option value="Shopeepay">Shopeepay</option>
+                <option value="Tunai">Tunai</option>
+            </select>
+
+        </p>
+        <p>
+            <label for="tanggal">Tanggal Booking :</label><br>
+            <input type="date" name="tanggal" id=tanggal" required />
+        </p>
+        <p>
+
+            <label> Pas Foto KTP : </label><br>
+            <input type="file" name="file" accept="image/png,image/jpg,image/jpeg" /><br />
+        </p>
+        <p>
+            <label> Isi Komentar : </label><br>
+            <textarea name="komentar"></textarea> <br /><br />
+        </p>
+        <p>
+            <input type="submit" value="Booking">
+            <input type="reset" value="Batal">
+        </p>
+    </form>
+</body>
+
+</html>
